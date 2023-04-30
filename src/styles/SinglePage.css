@@ -1,46 +1,39 @@
 
-#aboutMe{
-    position: relative;
-    width: 90%;
+#currentPage{
+    display: flex;
+    width: 100%;
     height: 100%;
-    margin: 0 5%;
+}
+
+#leftSide{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#leftSide img{
+    max-width: 80%;
+    max-height: 50%;
+}
+
+#rightSide{
+    width: 50%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding: 5% 10%;
+}
+
+#infoText{
+    max-height: 61%;
     overflow: scroll;
 }
-
-#imgHolder{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: min-content;
-    overflow: hidden;
+#rightSide h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
 }
-
-#imgHolder img{
-    border-radius: 5%;
-    width: 100%;
-}
-@media only screen and (max-width: 1125px){
-    #imgHolder img{
-        width: 90%;
-        max-width: 500px;
-        margin: 5%;
-        margin-top: 5vw;
-        margin-bottom: 0;
-    }
-   
-}
-
-@media only screen and (min-width: 1125px){
-    #aboutMe{
-        display: flex;
-        align-items: center;
-    }
-    #imgHolder{
-        min-width: 25vw;
-    }
-}
-
-#aboutMeText{
-    margin: 5%;
+#rightSide h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
 }

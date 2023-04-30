@@ -1,54 +1,84 @@
 {
     "pages": [
         {
-            "title": "page1",
-            "imageRef": "https://www.ikea.com/nl/nl/images/products/nammaro-bank-buiten-lichtbruin-gelazuurd__1138759_pe880059_s5.jpg?f=xl",
-            "last": false
-        },
-        {
-            "title": "page2",
-            "imageRef": "https://www.ikea.com/nl/nl/images/products/linneback-fauteuil-orrsta-olijfgroen__0933454_pe791910_s5.jpg?f=xl",
-            "last": false
-        },
-        {
-            "title": "page3",
-            "imageRef": "https://www.ikea.com/nl/nl/images/products/bengthakan-kruk-bamboefineer__0491298_pe624967_s5.jpg?f=xl",
-            "last": false
-        },
-        {
-            "title": "page4",
-            "imageRef": "https://www.ikea.com/nl/nl/images/products/tobias-eetkamerstoel-transparant-verchroomd__0727342_pe735614_s5.jpg?f=xl",
-            "last": false
-        },
-        {
-            "title": "page5",
-            "imageRef": "https://www.ikea.com/nl/nl/images/products/voxlov-eetkamerstoel-licht-bamboe__0948161_pe798889_s5.jpg?f=xl",
-            "last": false
-        },
-        {
-            "title": "page6",
+            "title": "Chair nr. 1",
             "imageRef": "https://www.ikea.com/nl/nl/images/products/ekenaset-fauteuil-kilanda-lichtbeige__1109687_pe870153_s5.jpg?f=xl",
-            "last": false
+            "last": false,
+            "text1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna fermentum iaculis eu non. Fames ac turpis egestas maecenas.",
+            "text2": "Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Sed blandit libero volutpat sed cras ornare arcu dui vivamus.",
+            "text3": "Diam maecenas sed enim ut sem viverra aliquet. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Nisl suscipit adipiscing bibendum est ultricies. Fringilla phasellus faucibus scelerisque eleifend donec. Lectus proin nibh nisl condimentum id venenatis. Mi proin sed libero enim sed faucibus turpis. Dignissim convallis aenean et tortor at risus. Vitae auctor eu augue ut lectus. Convallis convallis tellus id interdum velit laoreet id donec. Egestas congue quisque egestas diam in arcu cursus euismod. Interdum velit euismod in pellentesque massa placerat duis. Dictum at tempor commodo ullamcorper a lacus vestibulum. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Sed cras ornare arcu dui vivamus arcu. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Etiam non quam lacus suspendisse faucibus interdum posuere. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Scelerisque varius morbi enim nunc faucibus a pellentesque. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Tincidunt augue interdum velit euismod in."
         },
         {
-            "title": "page7",
-            "imageRef": "https://www.ikea.com/nl/nl/images/products/nammaro-bank-buiten-lichtbruin-gelazuurd__1138759_pe880059_s5.jpg?f=xl",
-            "last": false
+            "title": "Chair nr. 2",
+            "imageRef": "https://www.ikea.com/nl/nl/images/products/linneback-fauteuil-orrsta-olijfgroen__0933454_pe791910_s5.jpg?f=xl",
+            "last": false,
+            "text1": "Diam maecenas sed enim ut sem viverra aliquet. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Nisl suscipit adipiscing bibendum est ultricies. Fringilla phasellus faucibus scelerisque eleifend donec. Lectus proin nibh nisl condimentum id venenatis.",
+            "text2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna fermentum iaculis eu non. Fames ac turpis egestas maecenas.",
+            "text3": "Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Sed blandit libero volutpat sed cras ornare arcu dui vivamus. Mi proin sed libero enim sed faucibus turpis. Dignissim convallis aenean et tortor at risus. Vitae auctor eu augue ut lectus. Convallis convallis tellus id interdum velit laoreet id donec. Egestas congue quisque egestas diam in arcu cursus euismod. Interdum velit euismod in pellentesque massa placerat duis. Dictum at tempor commodo ullamcorper a lacus vestibulum. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Sed cras ornare arcu dui vivamus arcu. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Etiam non quam lacus suspendisse faucibus interdum posuere. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Scelerisque varius morbi enim nunc faucibus a pellentesque. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Tincidunt augue interdum velit euismod in."
         },
         {
-            "title": "page8",
-            "imageRef": "https://www.ikea.com/nl/nl/images/products/nammaro-bank-buiten-lichtbruin-gelazuurd__1138759_pe880059_s5.jpg?f=xl",
-            "last": false
+            "title": "Chair nr. 3",
+            "imageRef": "https://www.ikea.com/nl/nl/images/products/bengthakan-kruk-bamboefineer__0491298_pe624967_s5.jpg?f=xl",
+            "last": false,
+            "text1": "Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Sed blandit libero volutpat sed cras ornare arcu dui vivamus.",
+            "text2": "Diam maecenas sed enim ut sem viverra aliquet. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Nisl suscipit adipiscing bibendum est ultricies. Fringilla phasellus faucibus scelerisque eleifend donec. Lectus proin nibh nisl condimentum id venenatis.",
+            "text3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna fermentum iaculis eu non. Fames ac turpis egestas maecenas. Mi proin sed libero enim sed faucibus turpis. Dignissim convallis aenean et tortor at risus. Vitae auctor eu augue ut lectus. Convallis convallis tellus id interdum velit laoreet id donec. Egestas congue quisque egestas diam in arcu cursus euismod. Interdum velit euismod in pellentesque massa placerat duis. Dictum at tempor commodo ullamcorper a lacus vestibulum. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Sed cras ornare arcu dui vivamus arcu. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Etiam non quam lacus suspendisse faucibus interdum posuere. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Scelerisque varius morbi enim nunc faucibus a pellentesque. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Tincidunt augue interdum velit euismod in."
         },
         {
-            "title": "page9",
-            "imageRef": "https://www.ikea.com/nl/nl/images/products/nammaro-bank-buiten-lichtbruin-gelazuurd__1138759_pe880059_s5.jpg?f=xl",
-            "last": false
+            "title": "Chair nr. 4",
+            "imageRef": "https://www.ikea.com/nl/nl/images/products/tobias-eetkamerstoel-transparant-verchroomd__0727342_pe735614_s5.jpg?f=xl",
+            "last": false,
+            "text1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna fermentum iaculis eu non. Fames ac turpis egestas maecenas.",
+            "text2": "Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Sed blandit libero volutpat sed cras ornare arcu dui vivamus.",
+            "text3": "Diam maecenas sed enim ut sem viverra aliquet. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Nisl suscipit adipiscing bibendum est ultricies. Fringilla phasellus faucibus scelerisque eleifend donec. Lectus proin nibh nisl condimentum id venenatis. Mi proin sed libero enim sed faucibus turpis. Dignissim convallis aenean et tortor at risus. Vitae auctor eu augue ut lectus. Convallis convallis tellus id interdum velit laoreet id donec. Egestas congue quisque egestas diam in arcu cursus euismod. Interdum velit euismod in pellentesque massa placerat duis. Dictum at tempor commodo ullamcorper a lacus vestibulum. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Sed cras ornare arcu dui vivamus arcu. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Etiam non quam lacus suspendisse faucibus interdum posuere. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Scelerisque varius morbi enim nunc faucibus a pellentesque. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Tincidunt augue interdum velit euismod in."
         },
         {
-            "title": "page10",
+            "title": "Chair nr. 5",
+            "imageRef": "https://www.ikea.com/nl/nl/images/products/voxlov-eetkamerstoel-licht-bamboe__0948161_pe798889_s5.jpg?f=xl",
+            "last": false,
+            "text1": "Diam maecenas sed enim ut sem viverra aliquet. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Nisl suscipit adipiscing bibendum est ultricies. Fringilla phasellus faucibus scelerisque eleifend donec. Lectus proin nibh nisl condimentum id venenatis.",
+            "text2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna fermentum iaculis eu non. Fames ac turpis egestas maecenas.",
+            "text3": "Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Sed blandit libero volutpat sed cras ornare arcu dui vivamus. Mi proin sed libero enim sed faucibus turpis. Dignissim convallis aenean et tortor at risus. Vitae auctor eu augue ut lectus. Convallis convallis tellus id interdum velit laoreet id donec. Egestas congue quisque egestas diam in arcu cursus euismod. Interdum velit euismod in pellentesque massa placerat duis. Dictum at tempor commodo ullamcorper a lacus vestibulum. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Sed cras ornare arcu dui vivamus arcu. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Etiam non quam lacus suspendisse faucibus interdum posuere. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Scelerisque varius morbi enim nunc faucibus a pellentesque. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Tincidunt augue interdum velit euismod in."
+        },
+        {
+            "title": "Chair nr. 6",
             "imageRef": "https://www.ikea.com/nl/nl/images/products/nammaro-bank-buiten-lichtbruin-gelazuurd__1138759_pe880059_s5.jpg?f=xl",
-            "last": true
+            "last": false,
+            "text1": "Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Sed blandit libero volutpat sed cras ornare arcu dui vivamus.",
+            "text2": "Diam maecenas sed enim ut sem viverra aliquet. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Nisl suscipit adipiscing bibendum est ultricies. Fringilla phasellus faucibus scelerisque eleifend donec. Lectus proin nibh nisl condimentum id venenatis.",
+            "text3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna fermentum iaculis eu non. Fames ac turpis egestas maecenas.Mi proin sed libero enim sed faucibus turpis. Dignissim convallis aenean et tortor at risus. Vitae auctor eu augue ut lectus. Convallis convallis tellus id interdum velit laoreet id donec. Egestas congue quisque egestas diam in arcu cursus euismod. Interdum velit euismod in pellentesque massa placerat duis. Dictum at tempor commodo ullamcorper a lacus vestibulum. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Sed cras ornare arcu dui vivamus arcu. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Etiam non quam lacus suspendisse faucibus interdum posuere. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Scelerisque varius morbi enim nunc faucibus a pellentesque. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Tincidunt augue interdum velit euismod in."
+        },
+        {
+            "title": "Chair nr. 7",
+            "imageRef": "https://www.ikea.com/nl/nl/images/products/ekenaset-fauteuil-kilanda-lichtbeige__1109687_pe870153_s5.jpg?f=xl",
+            "last": false,
+            "text1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna fermentum iaculis eu non. Fames ac turpis egestas maecenas.",
+            "text2": "Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Sed blandit libero volutpat sed cras ornare arcu dui vivamus.",
+            "text3": "Diam maecenas sed enim ut sem viverra aliquet. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Nisl suscipit adipiscing bibendum est ultricies. Fringilla phasellus faucibus scelerisque eleifend donec. Lectus proin nibh nisl condimentum id venenatis. Mi proin sed libero enim sed faucibus turpis. Dignissim convallis aenean et tortor at risus. Vitae auctor eu augue ut lectus. Convallis convallis tellus id interdum velit laoreet id donec. Egestas congue quisque egestas diam in arcu cursus euismod. Interdum velit euismod in pellentesque massa placerat duis. Dictum at tempor commodo ullamcorper a lacus vestibulum. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Sed cras ornare arcu dui vivamus arcu. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Etiam non quam lacus suspendisse faucibus interdum posuere. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Scelerisque varius morbi enim nunc faucibus a pellentesque. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Tincidunt augue interdum velit euismod in."
+        },
+        {
+            "title": "Chair nr. 8",
+            "imageRef": "https://www.ikea.com/nl/nl/images/products/nammaro-bank-buiten-lichtbruin-gelazuurd__1138759_pe880059_s5.jpg?f=xl",
+            "last": false,
+            "text1": "Diam maecenas sed enim ut sem viverra aliquet. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Nisl suscipit adipiscing bibendum est ultricies. Fringilla phasellus faucibus scelerisque eleifend donec. Lectus proin nibh nisl condimentum id venenatis.",
+            "text2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna fermentum iaculis eu non. Fames ac turpis egestas maecenas.",
+            "text3": "Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Sed blandit libero volutpat sed cras ornare arcu dui vivamus. Mi proin sed libero enim sed faucibus turpis. Dignissim convallis aenean et tortor at risus. Vitae auctor eu augue ut lectus. Convallis convallis tellus id interdum velit laoreet id donec. Egestas congue quisque egestas diam in arcu cursus euismod. Interdum velit euismod in pellentesque massa placerat duis. Dictum at tempor commodo ullamcorper a lacus vestibulum. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Sed cras ornare arcu dui vivamus arcu. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Etiam non quam lacus suspendisse faucibus interdum posuere. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Scelerisque varius morbi enim nunc faucibus a pellentesque. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Tincidunt augue interdum velit euismod in."
+        },
+        {
+            "title": "Chair nr. 9",
+            "imageRef": "https://www.ikea.com/nl/nl/images/products/nammaro-bank-buiten-lichtbruin-gelazuurd__1138759_pe880059_s5.jpg?f=xl",
+            "last": false,
+            "text1": "Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Sed blandit libero volutpat sed cras ornare arcu dui vivamus.",
+            "text2": "Diam maecenas sed enim ut sem viverra aliquet. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Nisl suscipit adipiscing bibendum est ultricies. Fringilla phasellus faucibus scelerisque eleifend donec. Lectus proin nibh nisl condimentum id venenatis.",
+            "text3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna fermentum iaculis eu non. Fames ac turpis egestas maecenas. Mi proin sed libero enim sed faucibus turpis. Dignissim convallis aenean et tortor at risus. Vitae auctor eu augue ut lectus. Convallis convallis tellus id interdum velit laoreet id donec. Egestas congue quisque egestas diam in arcu cursus euismod. Interdum velit euismod in pellentesque massa placerat duis. Dictum at tempor commodo ullamcorper a lacus vestibulum. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Sed cras ornare arcu dui vivamus arcu. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Etiam non quam lacus suspendisse faucibus interdum posuere. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Scelerisque varius morbi enim nunc faucibus a pellentesque. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Tincidunt augue interdum velit euismod in."
+        },
+        {
+            "title": "Chair nr. 10",
+            "imageRef": "https://www.ikea.com/nl/nl/images/products/nammaro-bank-buiten-lichtbruin-gelazuurd__1138759_pe880059_s5.jpg?f=xl",
+            "last": true,
+            "text1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna fermentum iaculis eu non. Fames ac turpis egestas maecenas.",
+            "text2": "Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Sed blandit libero volutpat sed cras ornare arcu dui vivamus.",
+            "text3": "Diam maecenas sed enim ut sem viverra aliquet. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Nisl suscipit adipiscing bibendum est ultricies. Fringilla phasellus faucibus scelerisque eleifend donec. Lectus proin nibh nisl condimentum id venenatis. Mi proin sed libero enim sed faucibus turpis. Dignissim convallis aenean et tortor at risus. Vitae auctor eu augue ut lectus. Convallis convallis tellus id interdum velit laoreet id donec. Egestas congue quisque egestas diam in arcu cursus euismod. Interdum velit euismod in pellentesque massa placerat duis. Dictum at tempor commodo ullamcorper a lacus vestibulum. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Sed cras ornare arcu dui vivamus arcu. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Etiam non quam lacus suspendisse faucibus interdum posuere. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Scelerisque varius morbi enim nunc faucibus a pellentesque. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Tincidunt augue interdum velit euismod in."
         }
     ]
 }
