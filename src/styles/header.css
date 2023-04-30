@@ -1,17 +1,60 @@
 #header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 12vh;
-    max-height: 100px;
-    width: 100vw;
-    background-color: white;
     border-bottom: 3px rgb(37, 34, 34) solid;
     position: absolute;
+    width: 100vw;
     top: 0;
+    z-index: 999;
+    background-color: white;
+    overflow: hidden;
+}
+.closedMenu{
+    height:85px;
+    transition: height .5s cubic-bezier(1, 0, 0.5, 1);
 }
 
-#header h2{
+.openMenu{
+    height:160px;
+    transition: height .5s cubic-bezier(1, 0, 0.5, 1);
+}
+
+#headerTop{
+    display: flex;
+    justify-content: space-between;
+}
+
+#headerTop img{
+    height: 55px;
+    margin: 15px 35px;
+}
+#headerTop h2{
     font-weight: 300;
-    margin: 0 3rem;
+    margin: 25px 35px;
+    cursor: pointer;
+}
+
+#dropDown{
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    overflow: hidden;
+}
+
+#catList{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-left:55px;
+}
+
+#catList h3{
+    font-weight: 200;
+    cursor: pointer;
+}
+#catList h3:hover{
+    text-decoration: underline;
+}
+
+#dropDown h1{
+    margin-right: 35px;
+    cursor: pointer;
 }
