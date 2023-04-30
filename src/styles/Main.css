@@ -1,0 +1,112 @@
+  .main{
+    z-index: 1;
+    display: flex;
+    width: 90vw;
+    height:75vh;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 2px solid black;
+  }
+  @media only screen and (max-width: 600px){
+    .main{
+      flex-direction: column;
+      width: 95vw;
+      height: 60vh
+    }
+  }
+  
+  #catButtons{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 100%;
+    min-width: 20px;
+    border-right: 2px solid black;
+    overflow:scroll
+  }
+
+  #catButtons::-webkit-scrollbar{
+    display: none;
+  }
+
+  .catButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 22.5%;
+    font-size: medium;
+    border-bottom: 2px solid black;
+  }
+  @media only screen and (max-width: 600px){
+    #catButtons{
+      width: 100%;
+      min-height: 12%;
+      max-height: 10vh;
+      flex-direction: row;
+      border-right: 0;
+      border-bottom: 2px solid black;
+    }
+    .catButton{
+      min-width: 30%;
+      height: 100%;
+      flex-direction: row;
+      border-bottom: 0;
+      border-right: 2px solid black;
+    }
+  }
+  
+  .catButton:hover{
+    cursor: pointer;
+  }
+  
+  #text-box{
+    width: 85%;
+    height: 100%;
+    transition: 0.7s;
+    overflow: scroll;
+  }
+  
+  @media only screen and (max-width: 600px){
+    #text-box{
+      width:100%;
+    }
+  }
+  #text-box.projects-clrs{
+    background-color: #b6b0a0;
+    color: #514326;
+  }
+  #text-box.contact-clrs{
+    background-color: #9F524F;
+    color: #DBD9D2;
+  }
+  #text-box.resume-clrs{
+    background-color: #A38B75;
+    color: #eae9e2;
+  }
+  
+  #page-outer-div{
+    position: relative;
+    opacity: 0;
+    top: 1%;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    transition: 0.4s;
+  }
+  @media only screen and (max-width: 600px){
+    #page-outer-div.active{
+      opacity: 1;
+      top: 0;
+    }
+  }
+  @media only screen and (min-width: 600px){
+    #page-outer-div{
+      top: 0;
+      left: 1%;
+    }
+    #page-outer-div.active{
+      opacity: 1;
+      left: 0;
+    }
+  }

@@ -1,7 +1,4 @@
-portfolio site.
-
-design refrence:
-https://www.figma.com/file/syOxZS5yzY7Iz2rhN5o8hy/portfolio-site?node-id=0%3A1&t=IYNv9GtIDzhlTBQE-1
+portfolio site being transitioned into frontend only ecommerce styled site.
 
 In the project directory, you can run:
 
