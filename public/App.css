@@ -13,11 +13,11 @@ html, body {
   align-items: center;
   width: 100vw;
   height:100vh;
-  background-color: #EDE3DB;
+  /* background-color: #EDE3DB; */
 }
 @media only screen and (max-width: 600px){
   #root {
-    background-color: #CEB09A;
+    /* background-color: #CEB09A; */
   }
 }
 

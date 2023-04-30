@@ -1,16 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SinglePage from "./SinglePage.js";
 import './../styles/main.css'
 import pages from './../assets/pages.json'
 
-function Main() {
+function Main({cat}) {
 
-    const [currentPage, setCurrentPage] = useState(pages.pages[0]);
+    const [currentPage, setCurrentPage] = useState(pages[cat][0]);
+
+    useEffect(() => {
+        setCurrentPage(pages[cat][0])
+    }, [cat])
     
     return(
         <div className="main">
             <div id="catButtons" >
-                {pages.pages.map(page=>{
+                {pages[cat].map(page=>{
                     return page.last ? (
                         <div key={page.title} className="catButton" onClick={()=>{setCurrentPage(page)}}>
                             <img src={page.imageRef} alt={page.title}/>
@@ -24,7 +28,7 @@ function Main() {
                 })}
             </div>
             <div id="textBox">
-                <SinglePage page={currentPage}/> 
+                <SinglePage page={currentPage} cat={cat}/> 
             </div>
         </div>
     );
