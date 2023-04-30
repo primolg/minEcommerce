@@ -23,7 +23,7 @@ function Main({cat}) {
                         <div key={page.title} className="catButton" onClick={()=>{setCurrentPage(page)}}>
                             <img src={page.imageRef} alt={page.title}/>
                         </div>
-                            <div className="catSeperator"/>
+                            <div className="catSeperator" style={{backgroundColor: page === currentPage ? "#797979" : "#d3d3d3"}}/>
                     </>
                 })}
             </div>
