@@ -5,24 +5,17 @@
     height:75vh;
     border-radius: 5px;
     overflow: hidden;
-    border: 2px solid black;
+    border: 2px black solid;
   }
-  @media only screen and (max-width: 600px){
-    .main{
-      flex-direction: column;
-      width: 95vw;
-      height: 60vh
-    }
-  }
-  
+
   #catButtons{
     display: flex;
     flex-direction: column;
-    width: 15%;
+    width: 12%;
     height: 100%;
     min-width: 20px;
-    border-right: 2px solid black;
-    overflow:scroll
+    overflow:scroll;
+    align-items: center;
   }
 
   #catButtons::-webkit-scrollbar{
@@ -33,31 +26,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     min-height: 22.5%;
     font-size: medium;
-    border-bottom: 2px solid black;
-  }
-  @media only screen and (max-width: 600px){
-    #catButtons{
-      width: 100%;
-      min-height: 12%;
-      max-height: 10vh;
-      flex-direction: row;
-      border-right: 0;
-      border-bottom: 2px solid black;
-    }
-    .catButton{
-      min-width: 30%;
-      height: 100%;
-      flex-direction: row;
-      border-bottom: 0;
-      border-right: 2px solid black;
-    }
   }
   
   .catButton:hover{
     cursor: pointer;
+  }
+
+  .catButton img{
+    max-width: 30%;
+    max-height: auto;
+  }
+
+  .catSeperator{
+    min-height: 4px;
+    width: 50%;
+    background-color: rgb(211, 211, 211);
+    border-radius: 5px;
   }
   
   #text-box{
@@ -67,11 +55,6 @@
     overflow: scroll;
   }
   
-  @media only screen and (max-width: 600px){
-    #text-box{
-      width:100%;
-    }
-  }
   #text-box.projects-clrs{
     background-color: #b6b0a0;
     color: #514326;
@@ -95,6 +78,37 @@
     transition: 0.4s;
   }
   @media only screen and (max-width: 600px){
+    .main{
+      flex-direction: column;
+      width: 95vw;
+      height: 60vh
+    }
+
+    #catButtons{
+      width: 100%;
+      min-height: 12%;
+      max-height: 10vh;
+      flex-direction: row;
+      border-right: 0;
+    }
+    .catButton{
+      min-width: 22%;
+      height: 100%;
+      flex-direction: row;
+      border-bottom: 0;
+    }
+    .catButton img{
+      max-width: 50%;
+      max-height: 60%;
+    }
+    .catSeperator{
+      height: 30%;
+      min-width: 3px;
+    }
+    #text-box{
+      width:100%;
+    }
+
     #page-outer-div.active{
       opacity: 1;
       top: 0;

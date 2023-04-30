@@ -1,5 +1,4 @@
 import './../styles/SinglePage.css'
-import { useState } from "react";
 
 function AboutMe() {
 

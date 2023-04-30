@@ -2,62 +2,52 @@
     "pages": [
         {
             "title": "page1",
-            "imageRef": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Points_of_a_horse.jpg/330px-Points_of_a_horse.jpg",
-            "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Points_of_a_horse.jpg/330px-Points_of_a_horse.jpg",
+            "imageRef": "https://www.ikea.com/nl/nl/images/products/nammaro-bank-buiten-lichtbruin-gelazuurd__1138759_pe880059_s5.jpg?f=xl",
             "last": false
         },
         {
             "title": "page2",
-            "imageRef": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Points_of_a_horse.jpg/330px-Points_of_a_horse.jpg",
-            "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Points_of_a_horse.jpg/330px-Points_of_a_horse.jpg",
+            "imageRef": "https://www.ikea.com/nl/nl/images/products/linneback-fauteuil-orrsta-olijfgroen__0933454_pe791910_s5.jpg?f=xl",
             "last": false
         },
         {
             "title": "page3",
-            "imageRef": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Points_of_a_horse.jpg/330px-Points_of_a_horse.jpg",
-            "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Points_of_a_horse.jpg/330px-Points_of_a_horse.jpg",
+            "imageRef": "https://www.ikea.com/nl/nl/images/products/bengthakan-kruk-bamboefineer__0491298_pe624967_s5.jpg?f=xl",
             "last": false
         },
         {
             "title": "page4",
-            "imageRef": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Points_of_a_horse.jpg/330px-Points_of_a_horse.jpg",
-            "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Points_of_a_horse.jpg/330px-Points_of_a_horse.jpg",
+            "imageRef": "https://www.ikea.com/nl/nl/images/products/tobias-eetkamerstoel-transparant-verchroomd__0727342_pe735614_s5.jpg?f=xl",
             "last": false
         },
         {
             "title": "page5",
-            "imageRef": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Points_of_a_horse.jpg/330px-Points_of_a_horse.jpg",
-            "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Points_of_a_horse.jpg/330px-Points_of_a_horse.jpg",
+            "imageRef": "https://www.ikea.com/nl/nl/images/products/voxlov-eetkamerstoel-licht-bamboe__0948161_pe798889_s5.jpg?f=xl",
             "last": false
         },
         {
             "title": "page6",
-            "imageRef": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Points_of_a_horse.jpg/330px-Points_of_a_horse.jpg",
-            "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Points_of_a_horse.jpg/330px-Points_of_a_horse.jpg",
+            "imageRef": "https://www.ikea.com/nl/nl/images/products/ekenaset-fauteuil-kilanda-lichtbeige__1109687_pe870153_s5.jpg?f=xl",
             "last": false
         },
         {
             "title": "page7",
-            "imageRef": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Points_of_a_horse.jpg/330px-Points_of_a_horse.jpg",
-            "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Points_of_a_horse.jpg/330px-Points_of_a_horse.jpg",
+            "imageRef": "https://www.ikea.com/nl/nl/images/products/nammaro-bank-buiten-lichtbruin-gelazuurd__1138759_pe880059_s5.jpg?f=xl",
             "last": false
         },
         {
             "title": "page8",
-            "imageRef": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Points_of_a_horse.jpg/330px-Points_of_a_horse.jpg",
-            "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Points_of_a_horse.jpg/330px-Points_of_a_horse.jpg",
+            "imageRef": "https://www.ikea.com/nl/nl/images/products/nammaro-bank-buiten-lichtbruin-gelazuurd__1138759_pe880059_s5.jpg?f=xl",
             "last": false
         },
         {
             "title": "page9",
-            "imageRef": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Points_of_a_horse.jpg/330px-Points_of_a_horse.jpg",
-            "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Points_of_a_horse.jpg/330px-Points_of_a_horse.jpg",
+            "imageRef": "https://www.ikea.com/nl/nl/images/products/nammaro-bank-buiten-lichtbruin-gelazuurd__1138759_pe880059_s5.jpg?f=xl",
             "last": false
         },
         {
             "title": "page10",
-            "imageRef": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Points_of_a_horse.jpg/330px-Points_of_a_horse.jpg",
-            "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Points_of_a_horse.jpg/330px-Points_of_a_horse.jpg",
+            "imageRef": "https://www.ikea.com/nl/nl/images/products/nammaro-bank-buiten-lichtbruin-gelazuurd__1138759_pe880059_s5.jpg?f=xl",
             "last": true
         }
     ]

@@ -14,9 +14,17 @@ function Main() {
     <div className="main">
         <div id="catButtons" >
             {pages.pages.map(page=>{
-            return (
-                <div key={page.title} className={"catButton"} >{page.title}</div>
-            )})}
+                return page.last ? (
+                    <div key={page.title} className="catButton">
+                        <img src={page.imageRef} alt={page.title}/>
+                    </div>
+                ) : <>
+                    <div key={page.title} className="catButton">
+                        <img src={page.imageRef} alt={page.title}/>
+                    </div>
+                        <div className="catSeperator"/>
+                </>
+            })}
             {/* <div className="cat-button about-me-clrs" onClick={()=>{setCurrentCat("about-me")}}>about me</div> */}
         </div>
         <div id="text-box" className={currentCat ? (currentCat + "-clrs") : ""}>

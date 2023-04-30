@@ -16,13 +16,12 @@
     overflow: hidden;
 }
 
-img{
+#imgHolder img{
     border-radius: 5%;
     width: 100%;
 }
 @media only screen and (max-width: 1125px){
-
-    img{
+    #imgHolder img{
         width: 90%;
         max-width: 500px;
         margin: 5%;
