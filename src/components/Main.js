@@ -2,15 +2,27 @@ import { useState, useEffect } from "react";
 import SinglePage from "./SinglePage.js";
 import './../styles/main.css'
 import pages from './../assets/pages.json'
+import {MdKeyboardArrowLeft, MdKeyboardArrowRight} from 'react-icons/md'
 
 function Main({cat}) {
 
     const [currentPage, setCurrentPage] = useState(pages[cat][0]);
 
+    function findNeightbor(bool){
+        let currIdx = Number(currentPage.title.slice(-1))
+        if (currIdx === 0) currIdx = 9
+        else currIdx--
+        if (bool){
+            setCurrentPage(currIdx < 9 ? pages[cat][currIdx+1] : pages[cat][0])
+        } else {
+            setCurrentPage(currIdx > 0 ? pages[cat][currIdx-1] : pages[cat][9])
+        }
+    }
+
     useEffect(() => {
         setCurrentPage(pages[cat][0])
     }, [cat])
-    
+
     return(
         <div className="main">
             <div id="catButtons" >
@@ -28,7 +40,11 @@ function Main({cat}) {
                 })}
             </div>
             <div id="textBox">
-                <SinglePage page={currentPage} cat={cat}/> 
+                <SinglePage page={currentPage} findNeightbor={findNeightbor}/> 
+                <div id="leftRightBtns">
+                    <h1 onClick={()=>{findNeightbor(false)}}><MdKeyboardArrowLeft /></h1>
+                    <h1 onClick={()=>{findNeightbor(true)}}><MdKeyboardArrowRight /></h1>
+                </div>
             </div>
         </div>
     );

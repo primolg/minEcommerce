@@ -1,7 +1,7 @@
 import './../styles/singlePage.css'
 
-function AboutMe({page}) {
-  
+function AboutMe({page, findNeightbor}) {
+
   return(
     <div id='currentPage'>
       <div id="leftSide">

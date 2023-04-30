@@ -35,8 +35,11 @@
 #dropDown{
     display: flex;
     justify-content: space-between;
-    height: 85px;
+    align-items: center;
+    height: 75px;
     overflow: hidden;
+    /* background-color: rgb(246, 196, 70);
+    border-top: 2px black solid; */
 }
 
 #catList{
@@ -57,6 +60,7 @@
 #dropDown h1{
     margin-right: 35px;
     cursor: pointer;
+    padding-top: 10px;
 }
 
 @media only screen and (max-width: 600px){
@@ -68,11 +72,13 @@
     }
     #catList{
         width: 80%;
-        margin-left:10%;
+        margin-left:0;
     }
     #dropDown{
         height: 8rem;
         padding-top:2rem;
+        background-color: white;
+        border-top: none;
     }
     #dropDown h1{
         display: flex;
