@@ -52,13 +52,20 @@
   .catSeperator{
     min-height: 4px;
     width: 50%;
-    background-color: rgb(211, 211, 211);
     border-radius: 5px;
+    background-color: #d3d3d3;
+  }
+  #selected{
+    background-color: #797979;
   }
   
   #textBox{
     width: 88%;
     height: 100%;
+  }
+
+  #textBox::-webkit-scrollbar{
+    display: none;
   }
 
   @media only screen and (max-width: 600px){
@@ -90,8 +97,14 @@
       height: 30%;
       min-width: 3px;
     }
+  
+    #selected{
+      background-color: #d3d3d3;
+    }
+
     #textBox{
       width: 100%;
       height: 100%;
+      overflow: scroll;
     }
   }
