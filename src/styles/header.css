@@ -1,0 +1,17 @@
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    max-height: 100px;
+    width: 100vw;
+    background-color: white;
+    border-bottom: 3px rgb(37, 34, 34) solid;
+    position: absolute;
+    top: 0;
+}
+
+#header h2{
+    font-weight: 300;
+    margin: 0 3rem;
+}

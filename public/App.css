@@ -1,7 +1,10 @@
-*{
-  margin: 0;
+html, body {
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  margin-bottom: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  cursor:default;
 }
 
 #root {
@@ -10,7 +13,14 @@
   align-items: center;
   width: 100vw;
   height:100vh;
+  background-color: #EDE3DB;
 }
+@media only screen and (max-width: 600px){
+  #root {
+    background-color: #CEB09A;
+  }
+}
+
 @media only screen and (max-width: 600px){
   #root{
     align-items: unset;
