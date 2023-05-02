@@ -49,15 +49,21 @@
     min-width: 35px;
   }
 
+  #selected{
+    opacity: 1;
+  }
+
   .catSeperator{
     min-height: 4px;
     width: 50%;
     border-radius: 5px;
     background-color: #d3d3d3;
   }
-  #selected{
+
+  #selectedSeperator{
     background-color: #797979;
   }
+
   
   #textBox{
     width: 88%;
@@ -100,6 +106,7 @@
       height: 100%;
       flex-direction: row;
       border-bottom: 0;
+      opacity: 0.5;
     }
     .catButton img{
       max-width: 50%;
@@ -110,7 +117,7 @@
       min-width: 3px;
     }
   
-    #selected{
+    #selectedSeperator{
       background-color: #d3d3d3;
     }
 

@@ -1,16 +1,31 @@
 import './../styles/singlePage.css'
+// import ModalImage from "react-modal-image";
 
-function AboutMe({page, findNeightbor}) {
 
+function SinglePage({page, cart}) {
+  
+  function addToCart(){
+    if (cart.has(page.title)){
+      cart.set(page.title, {qty: cart.get(page.title).qty+1, price:page.price})
+    } else {
+      cart.set(page.title, {qty: 1, price:page.price})
+    }
+  }
+  
   return(
     <div id='currentPage'>
       <div id="leftSide">
           <img src={page.imageRef} alt={page.title} />
+          {/* <ModalImage
+            small={page.imageRef}
+            large={page.imageRef}
+            alt="Hello World!"
+          /> */}
       </div>
       <div id="rightSide">
         <div style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
           <h1>{page.title}</h1>
-          <h2 id="addCartBtn">add to cart</h2>
+          <h2 id="addCartBtn" onClick={addToCart}>add to cart</h2>
         </div>
         <div id='infoText'>
           <h3>{page.text1}<br></br></h3>
@@ -22,4 +37,4 @@ function AboutMe({page, findNeightbor}) {
   );
 }
 
-export default AboutMe;
+export default SinglePage;

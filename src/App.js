@@ -5,11 +5,12 @@ import { useState } from "react";
 
 function App() {
   const [cat, setCat] = useState('chairs')
+  const [cart] = useState(new Map())
 
   return(
     <div id="app">
-      <Header setCat={setCat}/>
-      <Main cat={cat}/>
+      <Header setCat={setCat} cart={cart}/>
+      <Main cat={cat} cart={cart}/>
     </div>
   );
 }
