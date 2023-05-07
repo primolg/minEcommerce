@@ -6,11 +6,12 @@ import { useState } from "react";
 function App() {
   const [cat, setCat] = useState('chairs')
   const [cart] = useState(new Map())
+  const [cartRender, setCartRender] = useState(true);
 
   return(
     <div id="app">
-      <Header setCat={setCat} cart={cart}/>
-      <Main cat={cat} cart={cart}/>
+      <Header setCat={setCat} cart={cart} cartRender={cartRender}/>
+      <Main cat={cat} cart={cart} cartRender={cartRender} setCartRender={setCartRender}/>
     </div>
   );
 }

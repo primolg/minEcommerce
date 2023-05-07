@@ -1,10 +1,16 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './../styles/header.css'
 import {MdKeyboardArrowUp} from 'react-icons/md'
 
 function Header({setCat, cart}) {
+
   const [dropDown, setDropDown] = useState(false)
   const [dropDownCat, setDropDownCat] = useState('browse')
+
+  let cartList = []
+  cart.forEach((key, value)=> {
+    cartList.push({title: value, qty: key.qty, price: key.price, image: key.imageRef})
+  })
 
   function clickCat(cat){
     setDropDown(false)
@@ -36,10 +42,18 @@ function Header({setCat, cart}) {
         <h2 onClick={()=>{menuToggle('browse')}}>Browse</h2>
         <h2 onClick={()=>{menuToggle('cart')}}>Cart</h2>
       </div>
-      <div id="dropDown">
+      <div id={dropDownCat === 'cart' ? "cartDropDown" : "dropDown"}>
         {dropDownCat === 'cart' ? 
           <div id="headerCart">
-            hello
+            {cartList.map(({title, qty, price, image})=>{
+              return(
+                <div className='cartItem' key={title}>
+                  <p>{title}</p>
+                  <p>{qty}</p>
+                  <p>{price}</p>
+                </div>
+              )
+            })}
           </div>:
         <div id="catList">
             <h3 onClick={()=>{clickCat('chairs')}}>Chairs</h3>

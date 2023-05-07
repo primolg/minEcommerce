@@ -1,17 +1,18 @@
+import { useEffect } from 'react'
 import './../styles/singlePage.css'
 // import ModalImage from "react-modal-image";
 
 
-function SinglePage({page, cart}) {
+function SinglePage({page, cart, cartRender, setCartRender}) {
   
   function addToCart(){
     if (cart.has(page.title)){
-      cart.set(page.title, {qty: cart.get(page.title).qty+1, price:page.price})
+      cart.set(page.title, {qty: cart.get(page.title).qty+1, price:page.price, photo:page.imageRef})
     } else {
       cart.set(page.title, {qty: 1, price:page.price})
     }
+    setCartRender(!cartRender)
   }
-  
   return(
     <div id='currentPage'>
       <div id="leftSide">

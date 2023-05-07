@@ -5,7 +5,7 @@ import pages from './../assets/pages.json'
 import {MdKeyboardArrowLeft, MdKeyboardArrowRight} from 'react-icons/md'
 
 
-function Main({cat, cart}) {
+function Main({cat, cart, cartRender, setCartRender}) {
 
     const [currentPage, setCurrentPage] = useState(pages[cat][0]);
     
@@ -41,7 +41,7 @@ function Main({cat, cart}) {
                 })}
             </div>
             <div id="textBox">
-                <SinglePage page={currentPage} cart={cart}/> 
+                <SinglePage page={currentPage} cart={cart} cartRender={cartRender} setCartRender={setCartRender}/> 
                 <div id="leftRightBtns">
                     <h1 onClick={()=>{findNeightbor(false)}}><MdKeyboardArrowLeft /></h1>
                     <h1 onClick={()=>{findNeightbor(true)}}><MdKeyboardArrowRight /></h1>
