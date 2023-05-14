@@ -1,15 +1,14 @@
-import { useEffect } from 'react'
 import './../styles/singlePage.css'
-// import ModalImage from "react-modal-image";
 
 
 function SinglePage({page, cart, cartRender, setCartRender}) {
   
   function addToCart(){
+    console.log(page.imageRef)
     if (cart.has(page.title)){
-      cart.set(page.title, {qty: cart.get(page.title).qty+1, price:page.price, photo:page.imageRef})
+      cart.set(page.title, {qty: cart.get(page.title).qty+1, price:page.price, imageRef:page.imageRef})
     } else {
-      cart.set(page.title, {qty: 1, price:page.price})
+      cart.set(page.title, {qty: 1, price:page.price, imageRef:page.imageRef})
     }
     setCartRender(!cartRender)
   }
@@ -17,11 +16,6 @@ function SinglePage({page, cart, cartRender, setCartRender}) {
     <div id='currentPage'>
       <div id="leftSide">
           <img src={page.imageRef} alt={page.title} />
-          {/* <ModalImage
-            small={page.imageRef}
-            large={page.imageRef}
-            alt="Hello World!"
-          /> */}
       </div>
       <div id="rightSide">
         <div style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>

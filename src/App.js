@@ -10,7 +10,7 @@ function App() {
 
   return(
     <div id="app">
-      <Header setCat={setCat} cart={cart} cartRender={cartRender}/>
+      <Header setCat={setCat} cart={cart} cartRender={cartRender} setCartRender={setCartRender}/>
       <Main cat={cat} cart={cart} cartRender={cartRender} setCartRender={setCartRender}/>
     </div>
   );
