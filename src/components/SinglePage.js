@@ -4,7 +4,6 @@ import './../styles/singlePage.css'
 function SinglePage({page, cart, cartRender, setCartRender}) {
   
   function addToCart(){
-    console.log(page.imageRef)
     if (cart.has(page.title)){
       cart.set(page.title, {qty: cart.get(page.title).qty+1, price:page.price, imageRef:page.imageRef})
     } else {
