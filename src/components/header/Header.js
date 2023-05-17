@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './../../styles/header.css'
 import BrowseHeader from './BrowseHeader'
 import CartHeader from './CartHeader'

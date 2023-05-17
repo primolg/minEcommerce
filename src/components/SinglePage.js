@@ -1,11 +1,12 @@
 import './../styles/singlePage.css'
 
-
 function SinglePage({page, cart, cartRender, setCartRender}) {
   
   function addToCart(){
+    
     if (cart.has(page.title)){
-      cart.set(page.title, {qty: cart.get(page.title).qty+1, price:page.price, imageRef:page.imageRef})
+      const qty = cart.get(page.title).qty
+      cart.set(page.title, {qty: qty < 10 ? qty + 1 : qty, price:page.price, imageRef:page.imageRef})
     } else {
       cart.set(page.title, {qty: 1, price:page.price, imageRef:page.imageRef})
     }

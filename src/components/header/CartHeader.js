@@ -1,32 +1,24 @@
 import './../../styles/header.css'
 import {FiTrash2} from 'react-icons/fi'
+import { useEffect, useState } from 'react'
 
 function CartHeader({cart, cartRender, setCartRender}) {
   let cartList = []
   const zeroToTen = [...new Array(10)]
   let total = 0
+
   cart.forEach((key, value)=> {
-    total += key.price * key.qty
+    total += Number(key.price * key.qty)
     cartList.push({title: value, qty: key.qty, price: key.price, imageRef: key.imageRef})
   })
-  
+
   function cartItemEdit(item, action, newCount){
-    if (action === "add"){
-      cart.set(item.title, {qty: cart.get(item.title).qty+1, price:item.price, imageRef:item.imageRef})
-    } else if (action === "subtract"){
-      let qty = cart.get(item.title).qty
-      if (qty > 1){
-        cart.set(item.title, {qty: qty - 1, price:item.price, imageRef:item.imageRef})
-      } else {
-        cart.delete(item.title)
-      }
-    } else if (action === "remove"){
+    if (action === "remove"){
       cart.delete(item.title)
     } else if (action === "change"){
       cart.set(item.title, {qty: newCount, price:item.price, imageRef:item.imageRef})
     }
     setCartRender(!cartRender)
-    console.log(cart)
   }
 
   return(
@@ -45,7 +37,7 @@ function CartHeader({cart, cartRender, setCartRender}) {
                           )
                         })}
                     </select>
-                    <div className="trash">
+                    <div className="trashCan">
                       <h4 onClick={()=>{cartItemEdit(item, "remove")}}><FiTrash2/></h4>
                     </div>
                   </div>

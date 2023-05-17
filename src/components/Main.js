@@ -4,7 +4,6 @@ import './../styles/main.css'
 import pages from './../assets/pages.json'
 import {MdKeyboardArrowLeft, MdKeyboardArrowRight} from 'react-icons/md'
 
-
 function Main({cat, cart, cartRender, setCartRender}) {
 
     const [currentPage, setCurrentPage] = useState(pages[cat][0]);
