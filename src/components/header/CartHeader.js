@@ -23,31 +23,36 @@ function CartHeader({cart, cartRender, setCartRender}) {
 
   return(
           <div id="headerCart">
-            <div id="cartItems">
-            {cartList.map((item)=>{
-              return(
-                <div className='cartItem' key={item.title}>
-                  <img src={item.imageRef} alt={item.title} />
-                  <div className='cartItemDesc'>
-                    <select className="cartChange" defaultValue={item.qty} onChange={event=>{cartItemEdit(item, "change", event.target.value)}}>
-                      {zeroToTen.map((key, value)=>{
-                        value++
-                        return (
-                          <option value={value}>{value}</option>
-                          )
-                        })}
-                    </select>
-                    <div className="trashCan">
-                      <h4 onClick={()=>{cartItemEdit(item, "remove")}}><FiTrash2/></h4>
+            <div id="cartItemsOuter">
+              <div id="cartItems">
+              {cartList.map((item)=>{
+                return(
+                  <div className='cartItem' key={item.title}>
+                    <img src={item.imageRef} alt={item.title} />
+                    <div className='cartItemDesc'>
+                      <select className="cartChange" defaultValue={item.qty} onChange={event=>{cartItemEdit(item, "change", event.target.value)}}>
+                        {zeroToTen.map((key, value)=>{
+                          value++
+                          return (
+                            <option value={value}>{value}</option>
+                            )
+                          })}
+                      </select>
+                      <div className="trashCan">
+                        <h5 onClick={()=>{cartItemEdit(item, "remove")}}><FiTrash2/></h5>
+                      </div>
                     </div>
                   </div>
-                </div>
-              )
-            })}
+                )
+              })}
+              </div>
             </div>
-            <div>
-              <h4>subtotal ${total ? total.toString().slice(0, -2) : 0}.00</h4>
-              <h2 id="checkout">checkout</h2>
+            <div id="checkout">
+              <div id="subtotal">
+                <h5>subtotal</h5>
+                <h4>${total ? total.toString().slice(0, -2) : 0}.00</h4>
+              </div>
+              <h2 id="checkoutBtn">checkout</h2>
             </div>
           </div>
   );
