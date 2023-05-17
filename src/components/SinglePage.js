@@ -1,7 +1,17 @@
 import './../styles/singlePage.css'
 
-function AboutMe({page, findNeightbor}) {
-
+function SinglePage({page, cart, cartRender, setCartRender}) {
+  
+  function addToCart(){
+    
+    if (cart.has(page.title)){
+      const qty = cart.get(page.title).qty
+      cart.set(page.title, {qty: qty < 10 ? qty + 1 : qty, price:page.price, imageRef:page.imageRef})
+    } else {
+      cart.set(page.title, {qty: 1, price:page.price, imageRef:page.imageRef})
+    }
+    setCartRender(!cartRender)
+  }
   return(
     <div id='currentPage'>
       <div id="leftSide">
@@ -10,7 +20,7 @@ function AboutMe({page, findNeightbor}) {
       <div id="rightSide">
         <div style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
           <h1>{page.title}</h1>
-          <h2 id="addCartBtn">add to cart</h2>
+          <h2 id="addCartBtn" onClick={addToCart}>add to cart</h2>
         </div>
         <div id='infoText'>
           <h3>{page.text1}<br></br></h3>
@@ -22,4 +32,4 @@ function AboutMe({page, findNeightbor}) {
   );
 }
 
-export default AboutMe;
+export default SinglePage;

@@ -1,20 +1,26 @@
 #header{
-    border-bottom: 3px rgb(37, 34, 34) solid;
     position: absolute;
     width: 100vw;
     top: 0;
     z-index: 999;
     background-color: white;
     overflow: hidden;
+    box-shadow: 0px 0px 10px rgb(170, 168, 168);
 }
+
 .closedMenu{
     height:85px;
     transition: height .5s cubic-bezier(1, 0, 0.5, 1);
 }
 
 .openMenu{
-    height:160px;
+    height:140px;
     transition: height .5s cubic-bezier(1, 0, 0.5, 1);
+}
+
+.openMenuCart{
+    height:250px;
+    transition: height .6s cubic-bezier(1, 0, 0.5, 1);
 }
 
 #headerTop{
@@ -26,9 +32,19 @@
     height: 55px;
     margin: 15px 35px;
 }
+
+#logoBrowse{
+    display: flex;
+}
+
 #headerTop h2{
     font-weight: 300;
     margin: 25px 35px;
+    cursor: pointer;
+}
+
+#logoBrowse h2{
+    margin: 30px 0px;
     cursor: pointer;
 }
 
@@ -36,10 +52,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 75px;
+    height: 30px;
     overflow: hidden;
-    /* background-color: rgb(246, 196, 70);
-    border-top: 2px black solid; */
 }
 
 #catList{
@@ -58,9 +72,91 @@
 }
 
 #dropDown h1{
-    margin-right: 35px;
+    margin-right: 31px;
     cursor: pointer;
     padding-top: 10px;
+}
+
+#cartDropDown{
+    display: flex;
+    align-items: center;
+    height: 75px;
+    overflow: visible;
+}
+
+#headerCart{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    margin-left:55px;
+}
+
+#cartItems{
+    display: flex;
+    max-width: 75%;
+    height: min-content;
+    overflow: scroll; 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+#cartItems::-webkit-scrollbar {
+    display: none;
+  }
+
+.cartItem{
+    display: flex;
+    flex-direction: column;
+    min-width: 5em;
+    max-width: 5em;
+    margin-right: 5em;
+}
+.cartItem img{
+    width: 100%;
+}
+
+.cartItemDesc{
+    display: flex;
+    min-height: 25px;
+    max-height: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+.cartChange{
+    height: 25px;
+    width: 3em;
+    border: 1.5px solid rgb(200, 200, 200);
+    border-radius: 7px;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.217);
+    outline: none;
+    cursor: pointer;
+}
+.trashCan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 22px;
+    width: 25px;
+    border: 1.5px solid rgb(200, 200, 200);
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.217);
+    cursor: pointer;
+}
+
+#checkout{
+    background-color: rgb(246, 196, 70);
+    height: min-content;
+    width: min-content;
+    padding: 5px 15px; 
+    color: rgb(35, 34, 34);
+    font-size: large;
+    font-weight: 400;
+    margin-right: 10%;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.217);
 }
 
 @media only screen and (max-width: 600px){
