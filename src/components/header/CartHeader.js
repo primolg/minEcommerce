@@ -46,7 +46,7 @@ function CartHeader({cart, cartRender, setCartRender}) {
             })}
             </div>
             <div>
-              <h4>subtotal {total}</h4>
+              <h4>subtotal ${total.toString().slice(0, -2)}.00</h4>
               <h2 id="checkout">checkout</h2>
             </div>
           </div>

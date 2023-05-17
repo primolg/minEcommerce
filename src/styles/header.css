@@ -94,10 +94,15 @@
 
 #cartItems{
     display: flex;
-    max-width: 80%;
+    max-width: 75%;
     height: min-content;
-    overflow: scroll;
+    overflow: scroll; 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+#cartItems::-webkit-scrollbar {
+    display: none;
+  }
 
 .cartItem{
     display: flex;
