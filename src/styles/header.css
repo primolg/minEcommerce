@@ -17,8 +17,9 @@
     height:140px;
     transition: height .5s cubic-bezier(1, 0, 0.5, 1);
 }
+
 .openMenuCart{
-    height:50vh;
+    height:250px;
     transition: height .6s cubic-bezier(1, 0, 0.5, 1);
 }
 
@@ -85,11 +86,18 @@
 
 #headerCart{
     display: flex;
-    width: 80%;
+    justify-content: space-between;
+    width: 90%;
     height: 100%;
     margin-left:55px;
-    /* overflow-x: scroll;
-    overflow-y: hidden; */
+}
+
+#cartItems{
+    display: flex;
+    max-width: 80%;
+    height: min-content;
+    overflow: scroll;
+    /* background-color: red; */
 }
 
 .cartItem{
@@ -97,8 +105,7 @@
     flex-direction: column;
     min-width: 5em;
     max-width: 5em;
-    /* height: 80%; */
-    /* background-color: aqua */
+    margin-right: 5em;
 }
 .cartItem img{
     width: 100%;
@@ -106,6 +113,46 @@
 
 .cartItemDesc{
     display: flex;
+    min-height: 25px;
+    max-height: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+.cartChange{
+    height: 25px;
+    width: 3em;
+    border: 1.5px solid rgb(200, 200, 200);
+    border-radius: 7px;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.217);
+    outline: none;
+    cursor: pointer;
+}
+.trashCan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 22px;
+    width: 25px;
+    border: 1.5px solid rgb(200, 200, 200);
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.217);
+    cursor: pointer;
+}
+
+#checkout{
+    background-color: rgb(246, 196, 70);
+    height: min-content;
+    width: min-content;
+    padding: 5px 15px; 
+    color: rgb(35, 34, 34);
+    font-size: large;
+    font-weight: 400;
+    margin-right: 10%;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.217);
 }
 
 @media only screen and (max-width: 600px){
