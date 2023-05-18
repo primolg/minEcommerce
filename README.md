@@ -5,6 +5,13 @@ https://www.figma.com/file/fRtwqhKbyZlnke3dXwjaR0/ECOMMERCE-FRONTEND-SITE?node-i
 
 
 In the project directory, you can run:
+### `npm run start`
 
-### `npm start`
+Todo's Code:
+-mobile css header
+-make it so selected item is always visible in scrollbar
+-left+right/up+down click trigger next/previous item.
+-checkout 
 
+Todo's Design:
+-new logo + trace designs

@@ -6,10 +6,8 @@ import {IoMdClose} from 'react-icons/io'
 import {RiShoppingBagLine} from 'react-icons/ri'
 import {BiMenu} from 'react-icons/bi'
 
-function Header({setCat, cart, cartRender, setCartRender}) {
+function Header({setCat, cart, cartRender, setCartRender, dropDown, setDropDown, dropDownCat, setDropDownCat}) {
 
-  const [dropDown, setDropDown] = useState(false)
-  const [dropDownCat, setDropDownCat] = useState('browse')
 
   function menuToggle(type){
     if (dropDown){

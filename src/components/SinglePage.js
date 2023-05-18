@@ -1,14 +1,15 @@
 import './../styles/singlePage.css'
 
-function SinglePage({page, cart, cartRender, setCartRender}) {
+function SinglePage({page, cart, cartRender, setCartRender, setDropDown, setDropDownCat}) {
   
   function addToCart(){
-    
     if (cart.has(page.title)){
       const qty = cart.get(page.title).qty
       cart.set(page.title, {qty: qty < 10 ? qty + 1 : qty, price:page.price, imageRef:page.imageRef})
     } else {
       cart.set(page.title, {qty: 1, price:page.price, imageRef:page.imageRef})
+      setDropDown(true)
+      setDropDownCat('cart')
     }
     setCartRender(!cartRender)
   }

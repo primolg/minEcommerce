@@ -31,8 +31,9 @@
 #headerTop img{
     height: 55px;
     margin: 15px 35px;
+    /* filter: hue-rotate(240deg); */
 }
-
+    
 #logoBrowse{
     display: flex;
 }
@@ -113,11 +114,11 @@
     scrollbar-width: none;
     padding: 5px;
     padding-left: 50px;
-    padding-right: 25px;
 }
+
 #cartItems::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .cartItem{
     display: flex;
