@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './../../styles/header.css'
 import BrowseHeader from './BrowseHeader'
 import CartHeader from './CartHeader'
@@ -7,7 +6,6 @@ import {RiShoppingBagLine} from 'react-icons/ri'
 import {BiMenu} from 'react-icons/bi'
 
 function Header({setCat, cart, cartRender, setCartRender, dropDown, setDropDown, dropDownCat, setDropDownCat}) {
-
 
   function menuToggle(type){
     if (dropDown){
@@ -27,6 +25,11 @@ function Header({setCat, cart, cartRender, setCartRender, dropDown, setDropDown,
     }
   }
 
+  function clickCat(cat){
+    setDropDown(false)
+    setCat(cat)
+  }
+
   return( 
     <div id="header" className={dropDown ? dropDownCat === "browse" ? "openMenu" : "openMenuCart" : "closedMenu"}>
       <div id="headerTop">
@@ -34,12 +37,15 @@ function Header({setCat, cart, cartRender, setCartRender, dropDown, setDropDown,
           <img src="https://1000logos.net/wp-content/uploads/2022/12/IKEA-Logo-1982.png" alt="fakelogo"/>
           {dropDown && dropDownCat === 'browse'? <h2 onClick={()=>setDropDown(false)}><IoMdClose/></h2> : <h2 onClick={()=>{menuToggle('browse')}}><BiMenu /></h2>}
         </div>
-        {dropDown && dropDownCat === 'cart'? <h2 onClick={()=>setDropDown(false)}><IoMdClose/></h2> :<h2 onClick={()=>{menuToggle('cart')}}><RiShoppingBagLine /></h2>}
+        <div id="cartIcon">
+          <h5>{cart.size}</h5>
+          {dropDown && dropDownCat === 'cart'? <h2 onClick={()=>setDropDown(false)}><IoMdClose/></h2> :<h2 onClick={()=>{menuToggle('cart')}}><RiShoppingBagLine /></h2>}
+        </div>
       </div>
       <div id={dropDownCat === 'cart' ? "cartDropDown" : "dropDown"}>
         {dropDownCat === 'cart' ? 
-          <CartHeader cart={cart} cartRender={cartRender} setCartRender={setCartRender}/> :
-          <BrowseHeader setCat={setCat} setDropDown={setDropDown}/>
+          <CartHeader cart={cart} cartRender={cartRender} setCartRender={setCartRender} setDropDown={setDropDown}/> :
+          <BrowseHeader setCat={setCat} setDropDown={setDropDown} clickCat={clickCat}/>
         }
       </div> 
     </div>

@@ -1,8 +1,8 @@
 import './../../styles/header.css'
 import {FiTrash2} from 'react-icons/fi'
-import { useEffect, useState } from 'react'
 
-function CartHeader({cart, cartRender, setCartRender}) {
+function CartHeader({cart, cartRender, setCartRender, setDropDown}) {
+
   let cartList = []
   const zeroToTen = [...new Array(10)]
   let total = 0
@@ -15,6 +15,7 @@ function CartHeader({cart, cartRender, setCartRender}) {
   function cartItemEdit(item, action, newCount){
     if (action === "remove"){
       cart.delete(item.title)
+      if (!cart.size) setDropDown(false)
     } else if (action === "change"){
       cart.set(item.title, {qty: newCount, price:item.price, imageRef:item.imageRef})
     }
@@ -25,26 +26,28 @@ function CartHeader({cart, cartRender, setCartRender}) {
           <div id="headerCart">
             <div id="cartItemsOuter">
               <div id="cartItems">
-              {cartList.map((item)=>{
-                return(
-                  <div className='cartItem' key={item.title}>
-                    <img src={item.imageRef} alt={item.title} />
-                    <div className='cartItemDesc'>
-                      <select className="cartChange" defaultValue={item.qty} onChange={event=>{cartItemEdit(item, "change", event.target.value)}}>
-                        {zeroToTen.map((key, value)=>{
-                          value++
-                          return (
-                            <option value={value}>{value}</option>
-                            )
-                          })}
-                      </select>
-                      <div className="trashCan">
-                        <h5 onClick={()=>{cartItemEdit(item, "remove")}}><FiTrash2/></h5>
+                {cartList.map((item)=>{
+                  return(
+                    <div className='cartItem' key={item.title}>
+                      <img src={item.imageRef} alt={item.title} />
+                      <div className='cartItemDesc'>
+                        <select className="cartChange" defaultValue={item.qty} onChange={event=>{cartItemEdit(item, "change", event.target.value)}}>
+                          {zeroToTen.map((key, value)=>{
+                            value++
+                            return (
+                              <option value={value}>{value}</option>
+                              )
+                            })}
+                        </select>
+                        <div className="trashCan">
+                          <h5 onClick={()=>{cartItemEdit(item, "remove")}}><FiTrash2/></h5>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                )
-              })}
+                  )
+                })}
+                <div className='cartItem'/>
+                <div className='cartItem'/>
               </div>
             </div>
             <div id="checkout">

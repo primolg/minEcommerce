@@ -4,7 +4,7 @@ import './../styles/main.css'
 import pages from './../assets/pages.json'
 import {MdKeyboardArrowLeft, MdKeyboardArrowRight} from 'react-icons/md'
 
-function Main({cat, cart, cartRender, setCartRender, setDropDown, setDropDownCat}) {
+function Main({cat, cart, cartRender, setCartRender, dropDown, setDropDown, dropDownCat, setDropDownCat}) {
 
     const [currentPage, setCurrentPage] = useState(pages[cat][0]);
     
@@ -18,17 +18,36 @@ function Main({cat, cart, cartRender, setCartRender, setDropDown, setDropDownCat
             setCurrentPage(currIdx > 0 ? pages[cat][currIdx-1] : pages[cat][9])
         }
     }
-    
+
+    const changePageClick = (e) => {
+        e.preventDefault()
+        if (e.key === 'ArrowDown' || e.key === 'ArrowRight'){
+            findNeightbor(true)
+        }
+        else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+            findNeightbor(false)
+        }
+    }
+
     useEffect(() => {
+        //add and remove eventListener for keydown click
+        window.addEventListener('keydown', changePageClick);
+        return () => {
+          window.removeEventListener('keydown', changePageClick);
+        };
+    }, [currentPage]);
+
+    useEffect(() => {
+        //set first page on catagory refresh
         setCurrentPage(pages[cat][0])
-    }, [cat, cart])
+    }, [cat]);
     
     return(
-        <div className="main">
+        <div className={dropDown && dropDownCat==='cart' ? "mainLower" : "main"}>
             <div id="catButtons" >
                 {pages[cat].map(page=>{
                     return page.last ? (
-                        <div key={page.title} className="catButton" onClick={()=>{setCurrentPage(page)}} >
+                        <div key={page.title} className="catButton" id="lastCatBtn" onClick={()=>{setCurrentPage(page)}} >
                             <img src={page.imageRef} alt={page.title}/>
                         </div>
                     ) : <>

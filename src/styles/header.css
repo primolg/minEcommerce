@@ -1,11 +1,11 @@
 #header{
-    position: absolute;
+    position: fixed;
     width: 100vw;
     top: 0;
     z-index: 999;
     background-color: white;
     overflow: hidden;
-    box-shadow: 0px 0px 10px rgb(170, 168, 168);
+    box-shadow: 0px 3px 15px rgb(0, 0, 0, 0.17);
 }
 
 .closedMenu{
@@ -14,12 +14,12 @@
 }
 
 .openMenu{
-    height:140px;
+    height:145px;
     transition: height .5s cubic-bezier(1, 0, 0.5, 1);
 }
 
 .openMenuCart{
-    height:200px;
+    height:190px;
     transition: height .6s cubic-bezier(1, 0, 0.5, 1);
 }
 
@@ -38,6 +38,27 @@
     display: flex;
 }
 
+#headerTop h5{
+    position: fixed;
+    font-weight: 400;
+    right: 15px;
+    top: 0px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.closedMenu #headerTop h5{
+    right: 26px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.openMenu #headerTop h5{
+    right: 26px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
 #headerTop h2{
     font-weight: 300;
     margin: 25px 35px;
@@ -47,6 +68,10 @@
 #logoBrowse h2{
     margin: 30px 0px;
     cursor: pointer;
+}
+
+#cartIcon{
+    margin-top: 5px;
 }
 
 #dropDown{
@@ -108,11 +133,10 @@
     display: flex;
     max-width: 100%;
     height: 75%;
-    overflow-y: scroll; 
-    overflow-x: visible; 
-    -ms-overflow-style: none;
+    overflow: scroll; 
+    -ms-overflow-style: visible;
     scrollbar-width: none;
-    padding: 5px;
+    padding-bottom: 5px;
     padding-left: 50px;
 }
 
@@ -127,8 +151,8 @@
     width: 4em;
     height: 100%;
     margin-right: 3em;
-    /* background-color: blue; */
 }
+
 .cartItem img{
     height: 60%;
 }
@@ -140,6 +164,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .cartChange{
     height: 70%;
     width: fit-content;
@@ -151,6 +176,7 @@
     outline: none;
     cursor: pointer;
 }
+
 .trashCan{
     display: flex;
     align-items: center;

@@ -1,11 +1,6 @@
 import './../../styles/header.css'
 
-function BrowseHeader({setCat, setDropDown}) {
-
-  function clickCat(cat){
-    setDropDown(false)
-    setCat(cat)
-  }
+function BrowseHeader({setCat, setDropDown, clickCat}) {
 
   return(
         <div id="catList">

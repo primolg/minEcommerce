@@ -13,6 +13,7 @@ function SinglePage({page, cart, cartRender, setCartRender, setDropDown, setDrop
     }
     setCartRender(!cartRender)
   }
+  
   return(
     <div id='currentPage'>
       <div id="leftSide">
@@ -24,9 +25,9 @@ function SinglePage({page, cart, cartRender, setCartRender, setDropDown, setDrop
           <h2 id="addCartBtn" onClick={addToCart}>add to cart</h2>
         </div>
         <div id='infoText'>
-          <h3>{page.text1}<br></br></h3>
-          <h3>{page.text2}<br></br></h3>
-          <h3>{page.text3}</h3>
+          <h4>{page.text1}<br></br></h4>
+          <h4>{page.text2}<br></br></h4>
+          <h4>{page.text3}<br></br><br></br><br></br></h4>
         </div>
       </div>
     </div>

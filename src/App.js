@@ -10,10 +10,11 @@ function App() {
   const [dropDown, setDropDown] = useState(false);
   const [dropDownCat, setDropDownCat] = useState('browse');
 
+
   return(
     <div id="app">
       <Header setCat={setCat} cart={cart} cartRender={cartRender} setCartRender={setCartRender} dropDown={dropDown} setDropDown={setDropDown} dropDownCat={dropDownCat} setDropDownCat={setDropDownCat}/>
-      <Main cat={cat} cart={cart} cartRender={cartRender} setCartRender={setCartRender} setDropDown={setDropDown} setDropDownCat={setDropDownCat}/>
+      <Main cat={cat} cart={cart} cartRender={cartRender} setCartRender={setCartRender} dropDown={dropDown} setDropDown={setDropDown} dropDownCat={dropDownCat} setDropDownCat={setDropDownCat}/>
     </div>
   );
 }
