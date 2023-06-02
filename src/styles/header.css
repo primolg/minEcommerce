@@ -4,7 +4,7 @@
     top: 0;
     z-index: 999;
     background-color: white;
-    overflow: hidden;
+    overflow: hidden !important;
     box-shadow: 0px 3px 15px rgb(0, 0, 0, 0.17);
 }
 
@@ -15,11 +15,13 @@
 
 .openMenu{
     height:145px;
+    min-height: fit-content;
     transition: height .5s cubic-bezier(1, 0, 0.5, 1);
 }
 
 .openMenuCart{
     height:195px;
+    min-height: fit-content;
     transition: height .6s cubic-bezier(1, 0, 0.5, 1);
 }
 
