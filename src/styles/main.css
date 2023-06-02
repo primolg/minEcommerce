@@ -24,11 +24,11 @@
   .mainLower{
     position: absolute;
     margin-top: 160px;
+    padding-top: 3vh;
     display: flex;
     width: 96vw;
     height:80vh;
     max-height: 80vh;
-    padding-top: 3vh;
     transition: .6s cubic-bezier(1, 0.2, 0.5, 1);
   }
 
@@ -54,10 +54,12 @@
   #catButtons::-webkit-scrollbar{
     display: none;
   }
+
   .mainLower #catButtons{
     height: 80%;
     transition: .6s cubic-bezier(1, 0, 0.3, 1);
   }
+
   .catButton{
     display: flex;
     justify-content: center;
@@ -106,7 +108,6 @@
   
   #leftRightBtns{
     height: min-content;
-    /* background-color: blue; */
     width: 70%;
     cursor: pointer;
     display: flex;
@@ -136,6 +137,19 @@
       margin-top: 55px;
       width: 95vw;
       height: 84vh;
+    }
+    .mainLower{
+      position: fixed;
+      flex-direction: column;
+      margin-top: 55px;
+      width: 95vw;
+      height: 84vh;
+      overflow: visible;
+      max-height: none;
+    }
+
+    .mainLower #lastCatBtn{
+      padding-bottom: 0;
     }
 
     #catButtons{
