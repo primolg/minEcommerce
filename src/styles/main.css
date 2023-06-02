@@ -160,6 +160,7 @@
       border-right: 0;
       -webkit-mask: none; 
       mask: none;
+      overflow-y: hidden;
     }
 
     #selected{
