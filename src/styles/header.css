@@ -15,13 +15,11 @@
 
 .openMenu{
     height:145px;
-    min-height: fit-content;
     transition: height .5s cubic-bezier(1, 0, 0.5, 1);
 }
 
 .openMenuCart{
     height:195px;
-    min-height: fit-content;
     transition: height .6s cubic-bezier(1, 0, 0.5, 1);
 }
 
@@ -80,20 +78,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 30px;
+    height: 60px;
     overflow: hidden;
 }
 
 #catList{
     display: flex;
     justify-content: space-between;
+    align-items: top;
     width: 30%;
     margin-left:55px;
+    margin-top:-1em;
 }
 
 #catList h3{
     font-weight: 200;
     cursor: pointer;
+    height: min-content;
 }
 #catList h3:hover{
     text-decoration: underline;
@@ -102,7 +103,6 @@
 #dropDown h1{
     margin-right: 31px;
     cursor: pointer;
-    padding-top: 10px;
 }
 
 #cartDropDown{
@@ -237,9 +237,6 @@
 
 @media only screen and (max-width: 600px){
 
-    .openMenu{
-        height: 20%;
-    }
 
     #dropDown{
         flex-direction: column;
@@ -261,7 +258,7 @@
     }
 
     .openMenuCart{
-        height:35%;    
+        height:300px;    
     }
 
     #headerCart{
@@ -282,6 +279,7 @@
     #cartItems{
         padding-left: 40px;
         margin-right: -40px;
+        overflow-y: hidden;
     }
 
     .cartItem{
